@@ -1,0 +1,126 @@
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Document</title>
+  <link rel="stylesheet" href="informationtechnology.css">
+
+  <link rel="icon"
+    href="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGVuc3xlbnwwfHwwfHw%3D&w=1000&q=80">
+
+  <script src="https://kit.fontawesome.com/7415e1652a.js" crossorigin="anonymous"></script>
+  <script src="informationtechnology.js"></script>
+</head>
+
+  
+
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="btn">
+
+      <i class="fa-solid fa-bars"></i>
+
+    </label>
+
+    <img src="C:\Users\Rishika\OneDrive\Desktop\name\helloworld.html\New folder\logo-mcm.png" ); class="img">
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a class="loginbtn" onclick="document.getElementById('login-form').style.display='block'"
+          style="width: auto;">Login</a></li>
+    </ul>
+
+  </nav>
+ 
+  <section class="background"></section>
+  <div id="login-form" class="login-page">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" onclick='login()' class='toggle-btn'>Login</button>
+        <button type="button" onclick='Register()' class='toggle-btn'>Register</button>
+      </div>
+      <!--Creating Login form-->
+      <form id="login" action="https://script.google.com/macros/s/AKfycbz6SvEMYtcwcrvvJLUqXbzZKPbAwRMkPKJYYbg2Hseh/dev"
+        class="input-group-login">
+
+        <input type="text" class="input-field" id="username" placeholder="Email Id" required>
+        <input type="password" class="input-field" id="password" placeholder="Enter Password" required>
+
+        <input type="checkbox" class="check-box">
+        <span>Remember Password</span>
+        <button type="submit" class="submit-btn" onclick="validate()">Log in</button>
+      </form>
+      <!--Creating Registration form-->
+      <form id="Register" class="input-group-login">
+        <input type="text" class="input-field" placeholder="First Name" required>
+        <input type="text" class="input-field" placeholder="Last Name" required>
+        <input type="email" class="input-field" placeholder="Email Id" required>
+        <input type="password" class="input-field" placeholder="Enter Password" required>
+        <input type="password" class="input-field" placeholder="Confirm Password" required>
+        <input type="checkbox" class="check-box">
+        <span>I agree to the term and conditions</span>
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("Register");
+    var z = document.getElementById("btn");
+    function Register() {
+      x.style.left = '-400px';
+      y.style.left = '50px';
+      z.style.left = '110px';
+    }
+    function login() {
+      x.style.left = '50px';
+      y.style.left = '450px';
+      z.style.left = '0px';
+    }
+  </script>
+  <script>
+    var modal = document.getElementById('login-form');
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <script>
+    function validate() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      var usertype = document.getElementById("usertype").value;
+      if (username == "admin" && password == "admin@123" && usertype == "student") {
+        window.location.href = "https://www.w3schools.com/js/js_window_location.asp";
+      }
+      else if (username == "principle" && password == "principle@123" && usertype == "principle") {
+        window.location.href = "file:///C:/Users/Rishika/OneDrive/Desktop/name/helloworld.html/New%20folder/PRINCIPLE.html";
+      }
+      else if (username == "teacher" && password == "teacher@123" && usertype == "teacher") {
+        window.location.href = "file:///C:/Users/Rishika/OneDrive/Desktop/name/helloworld.html/New%20folder/Teachers.html";
+      }
+      else (alert("login failed"));
+    }
+  </script>
+  <!--creating ciimcm word to print-->
+  <section class="showcase">
+    <video src="name.mp4" autoplay loop muted type="video.mp4" width="400px"></video>
+    <h1 class="tittle">CII-MCM</h1>
+    </section-->
+<a href="#" class="bon">Click me</a>  
+male<input type="radio" name="gender" value="male">
+female<input type="radio" name="gender" value="male">
+other<input type="radio" name="gender" value="male">
+done<input type="radio" name="gender" value="male">
+</body>
+
+</html>
